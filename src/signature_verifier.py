@@ -58,7 +58,3 @@ class SignatureVerifier:
         except Exception as e:
             self._log_error(f"An error occurred in _verify_eoa_signature: {e}")
             return False
-    
-    def _log_error(self, message: str):
-        """Internal method to log errors."""
-        print(message)  # Replace with a logging mechanism if needed
