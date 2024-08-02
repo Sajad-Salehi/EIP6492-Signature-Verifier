@@ -5,7 +5,16 @@ description = "A Python library for verifying Ethereum signatures in compliance 
 authors = ["Sajad <SajadSolidity@gmail.com>"]
 license = "mit"
 readme = "README.md"
-package-mode = false
+packages = [{ include = "src" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Sajad-Salehi/EIP6492-Signature-Verifier"
+Issues = "https://github.com/Sajad-Salehi/EIP6492-Signature-Verifier/issues"
 
 [tool.poetry.dependencies]
 python = "^3.12"
