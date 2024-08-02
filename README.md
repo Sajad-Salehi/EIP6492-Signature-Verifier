@@ -52,36 +52,29 @@ To contribute to the development of this library, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/eip6492-signature-verifier.git
-   cd eip6492-signature-verifier
+   git clone https://github.com/Sajad-Salehi/EIP6492-Signature-Verifier.git
+   cd EIP6492-Signature-Verifier
    ```
 
 2. **Install Development Dependencies**
 
    ```bash
-   pip install -r requirements.txt
+   poetry install
    ```
 
-3. **Run Tests**
 
-   Execute the following command to run the tests:
-
-   ```bash
-   python -m unittest discover -s tests
-   ```
-
-4. **Build and Publish**
+3. **Build and Publish**
 
    To build the library, use:
 
    ```bash
-   python setup.py sdist bdist_wheel
+   poetry build
    ```
 
    To upload the package to PyPI, use:
 
    ```bash
-   twine upload dist/*
+   poetry publish --build --username __token__ --password <your-pypi-token>
    ```
 
 ## License
@@ -90,12 +83,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For issues or feature requests, please open an issue on the [GitHub repository](https://github.com/yourusername/eip6492-signature-verifier/issues).
+For issues or feature requests, please open an issue on the [GitHub repository](https://github.com/Sajad-Salehi/EIP6492-Signature-Verifier/issues).
 
-For direct contact, email: [your.email@example.com](mailto:your.email@example.com)
-
-## Acknowledgments
-
-- [Web3.py](https://web3py.readthedocs.io/en/stable/) for Ethereum interaction.
-- [Eth-ABI](https://github.com/ethereum/eth-abi) for encoding and decoding Ethereum data.
-- [HexBytes](https://hexbytes.readthedocs.io/) for handling hexadecimal data.
+For direct contact, email: [SajadSolidity@gmail.com](mailto:SajadSolidity@gmail.com)
