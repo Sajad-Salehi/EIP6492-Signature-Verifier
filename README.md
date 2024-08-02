@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **EIP6492-Signature-Verifier** library is a Python package designed to verify Ethereum signatures in compliance with EIP-6492. It supports both smart contract and externally owned account (EOA) signatures, automatically selecting the appropriate verification method based on the length of the signature. This library simplifies the process of signature verification for Ethereum-based applications.
+The **erc6492_signature_verifier** library is a Python package designed to verify Ethereum signatures in compliance with EIP-6492. It supports both smart contract and externally owned account (EOA) signatures, automatically selecting the appropriate verification method based on the length of the signature. This library simplifies the process of signature verification for Ethereum-based applications.
 
 ## Features
 
@@ -12,10 +12,10 @@ The **EIP6492-Signature-Verifier** library is a Python package designed to verif
 
 ## Installation
 
-You can install the **EIP6492-Signature-Verifier** library from PyPI using pip:
+You can install the **erc6492_signature_verifier** library from PyPI using pip:
 
 ```bash
-pip install eip6492-signature-verifier
+pip install erc6492_signature_verifier
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ Here’s a quick guide on how to use the `SignatureVerifier` class:
 ### Example
 
 ```python
-from eip6492_signature_verifier import SignatureVerifier
+from erc6492_signature_verifier import SignatureVerifier
 
 # Initialize the verifier with your Web3 provider URL
 verifier = SignatureVerifier("YOUR_WEB3_PROVIDER_URL")
@@ -52,7 +52,7 @@ To contribute to the development of this library, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/Sajad-Salehi/EIP6492-Signature-Verifier.git
+   git clone https://github.com/sajad-salehi/EIP6492-Signature-Verifier.git
    cd EIP6492-Signature-Verifier
    ```
 
@@ -62,8 +62,15 @@ To contribute to the development of this library, follow these steps:
    poetry install
    ```
 
+3. **Run Tests**
 
-3. **Build and Publish**
+   Execute the following command to run the tests:
+
+   ```bash
+   poetry run pytest
+   ```
+
+4. **Build and Publish**
 
    To build the library, use:
 
@@ -74,7 +81,7 @@ To contribute to the development of this library, follow these steps:
    To upload the package to PyPI, use:
 
    ```bash
-   poetry publish --build --username __token__ --password <your-pypi-token>
+   poetry publish --build --username __token__ --password YOUR_PYPI_TOKEN
    ```
 
 ## License
