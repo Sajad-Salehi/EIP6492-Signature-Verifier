@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "erc6492_signature_verifier"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Python library for verifying Ethereum signatures in compliance with EIP-6492, supporting both smart contracts and externally owned accounts (EOA)."
 authors = ["Sajad <SajadSolidity@gmail.com>"]
 license = "mit"
@@ -17,7 +17,7 @@ Homepage = "https://github.com/Sajad-Salehi/EIP6492-Signature-Verifier"
 Issues = "https://github.com/Sajad-Salehi/EIP6492-Signature-Verifier/issues"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.9"
 web3 = "^6.20.1"
 safe-pysha3 = "^1.0.4"
 
