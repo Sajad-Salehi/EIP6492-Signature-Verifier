@@ -11,11 +11,13 @@ class SignatureVerifier:
         self.w3 = Web3(Web3.HTTPProvider(web3_provider))
     
     def verify_signature(self, signature: str, message: str, signer: str) -> bool:
+
+        signer_pb = Web3.to_checksum_address(signer)
         """Public method to verify a signature based on its length."""
         if len(signature) > 132:
-            return self._verify_sc_signature(signature, message, signer)
+            return self._verify_sc_signature(signature, message, signer_pb)
         else:
-            return self._verify_eoa_signature(signature, message, signer)
+            return self._verify_eoa_signature(signature, message, signer_pb)
     
     def _verify_sc_signature(self, signature: str, message: str, signer: str) -> bool:
         """Internal method to verify a smart contract signature."""
